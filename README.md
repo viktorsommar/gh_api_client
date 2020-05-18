@@ -4,6 +4,8 @@ You are challenged with creating a feature that allows the users to search the G
 
 We have prepared the basic user interface for you. Your task is to make a call to the GitHub API and retrieve information on whatever the user inputs in the search field.
 
+You will fork this repository and then clone down the forked repository to your local computer. Then you need to branch off before you start with the actual challenge. When you feel that you are done, make a pull request towards this repository.
+
 ![](gh_search_basic_ui.png)
 
 ### Resources
