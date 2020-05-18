@@ -6,6 +6,8 @@ We have prepared the basic user interface for you. Your task is to make a call t
 
 You will fork this repository and then clone down the forked repository to your local computer. Then you need to branch off before you start with the actual challenge. When you feel that you are done, make a pull request towards this repository.
 
+Once you feel that you are finished with the coding challenge you need to open up the `writtenExam.md` and answer the question there.
+
 ![](gh_search_basic_ui.png)
 
 ### Resources
