@@ -1,68 +1,94 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Midcourse Exam Challenge - GitHub User Search
 
-## Available Scripts
+You are challenged with creating a feature that allows the users to search the GitHub registry of users.
 
-In the project directory, you can run:
+We have prepared the basic user interface for you. Your task is to make a call to the GitHub API and retrieve information on whatever the user inputs in the search field.
 
-### `yarn start`
+![](gh_search_basic_ui.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Resources
+GitHub API Documentation: https://developer.github.com/v3/
+More on searching for users: https://developer.github.com/v3/search/#search-users
+Postman: https://www.postman.com/
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Tests
+This repository has been equipped with Cypress for E2E tests. You will get extra scores for adding and component tests (using Jest and Enzyme)
 
-### `yarn test`
+To run the test suitee, execute:
+```
+$ yarn cypress
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Example response
+The search for "Barack" yields the following results:
+```json
+{
+    "total_count": 163,
+    "incomplete_results": false,
+    "items": [
+        {
+            "login": "barack",
+            "id": 681626,
+            "node_id": "MDQ6VXNlcjY4MTYyNg==",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/681626?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/barack",
+            "html_url": "https://github.com/barack",
+            "followers_url": "https://api.github.com/users/barack/followers",
+            "following_url": "https://api.github.com/users/barack/following{/other_user}",
+            "gists_url": "https://api.github.com/users/barack/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/barack/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/barack/subscriptions",
+            "organizations_url": "https://api.github.com/users/barack/orgs",
+            "repos_url": "https://api.github.com/users/barack/repos",
+            "events_url": "https://api.github.com/users/barack/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/barack/received_events",
+            "type": "User",
+            "site_admin": false,
+            "score": 1.0
+        },
+        {
+            "login": "PresidentObama",
+            "id": 10196880,
+            "node_id": "MDQ6VXNlcjEwMTk2ODgw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/10196880?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/PresidentObama",
+            "html_url": "https://github.com/PresidentObama",
+            "followers_url": "https://api.github.com/users/PresidentObama/followers",
+            "following_url": "https://api.github.com/users/PresidentObama/following{/other_user}",
+            "gists_url": "https://api.github.com/users/PresidentObama/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/PresidentObama/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/PresidentObama/subscriptions",
+            "organizations_url": "https://api.github.com/users/PresidentObama/orgs",
+            "repos_url": "https://api.github.com/users/PresidentObama/repos",
+            "events_url": "https://api.github.com/users/PresidentObama/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/PresidentObama/received_events",
+            "type": "User",
+            "site_admin": false,
+            "score": 1.0
+        },
+        {
+            "login": "shentibeitaokongle",
+            "id": 22750197,
+            "node_id": "MDQ6VXNlcjIyNzUwMTk3",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/22750197?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/shentibeitaokongle",
+            "html_url": "https://github.com/shentibeitaokongle",
+            "followers_url": "https://api.github.com/users/shentibeitaokongle/followers",
+            "following_url": "https://api.github.com/users/shentibeitaokongle/following{/other_user}",
+            "gists_url": "https://api.github.com/users/shentibeitaokongle/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/shentibeitaokongle/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/shentibeitaokongle/subscriptions",
+            "organizations_url": "https://api.github.com/users/shentibeitaokongle/orgs",
+            "repos_url": "https://api.github.com/users/shentibeitaokongle/repos",
+            "events_url": "https://api.github.com/users/shentibeitaokongle/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/shentibeitaokongle/received_events",
+            "type": "User",
+            "site_admin": false,
+            "score": 1.0
+        }
+    ]
+}
+```
