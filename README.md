@@ -14,7 +14,7 @@ Postman: https://www.postman.com/
 ### Tests
 This repository has been equipped with Cypress for E2E tests. You will get extra scores for adding and component tests (using Jest and Enzyme)
 
-To run the test suitee, execute:
+To run the test suite, execute:
 ```
 $ yarn cypress
 ```
@@ -92,3 +92,8 @@ The search for "Barack" yields the following results:
     ]
 }
 ```
+
+### Your exam
+The facilitator will inform you how much time you have to complete the task. You are free to use any resources you deem necessary. We will observe your workflow as well as assess the quality of your code and tests.
+
+Good luck!
