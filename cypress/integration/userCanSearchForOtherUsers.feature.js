@@ -8,7 +8,7 @@ describe("User can search for other users on Github", () => {
     })
     cy.visit("/")
     cy.get("input").type("barack")
-    cy.get("search").click()
+    cy.get("button").click()
   })
   it("user can see results", () => {
     cy.get("items-id-681626")
