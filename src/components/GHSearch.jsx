@@ -37,7 +37,7 @@ class GHSearch extends Component {
       <>
         <form onSubmit={this.search}>
         <Input type="text" name="search" placeholder="Input GH username"/>
-        <Button type="button">Search</Button>
+        <Button type="submit">Search</Button>
         </form>
       </>
     )
