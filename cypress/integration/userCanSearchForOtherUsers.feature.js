@@ -4,7 +4,7 @@ describe("User can search for other users on Github", () => {
     cy.route({
       method: "GET",
       url: "http://localhost:3000/search/users",
-      response: "fixture:example.json"
+      response: "fixture:users.json"
     })
     cy.visit("/")
     cy.get("input").type("barack")
