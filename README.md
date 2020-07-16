@@ -11,12 +11,12 @@ Once you feel that you are finished with the coding challenge you need to open u
 ![](gh_search_basic_ui.png)
 
 ### Resources
-GitHub API Documentation: https://developer.github.com/v3/
-More on searching for users: https://developer.github.com/v3/search/#search-users
-Postman: https://www.postman.com/
+- GitHub API Documentation: https://developer.github.com/v3/
+- More on searching for users: https://developer.github.com/v3/search/#search-users
+- Postman: https://www.postman.com/
 
 ### Tests
-This repository has been equipped with Cypress for E2E tests. You will get extra scores for adding and component tests (using Jest and Enzyme)
+This repository has been equipped with Cypress for E2E tests. You will get extra scores for adding component tests (using Jest and Enzyme)
 
 To run the test suite, execute:
 ```
